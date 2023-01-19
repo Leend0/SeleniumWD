@@ -21,8 +21,13 @@ public class HomePage {
         return new LoginPage(driver);
     }
 
-    public DropdownPage clickDropDown(){
+    public DropdownPage clickDropDown(){  
         clickLink("Dropdown");
         return new DropdownPage(driver);
+    }
+
+    public ForgotPasswordPage clickForgotPassword(){
+        clickLink("Forgot Password");
+        return new ForgotPasswordPage(driver);
     }
 }
