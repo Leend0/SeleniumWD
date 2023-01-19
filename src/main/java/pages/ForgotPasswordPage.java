@@ -7,7 +7,7 @@ public class ForgotPasswordPage {
 
     private WebDriver driver;
     private By emailField = By.id("email");
-    private By retrievePassword = By.linkText("Retrieve password");
+    private By retrievePassword = By.cssSelector("i.icon-signin");
 
     public ForgotPasswordPage(WebDriver driver){
         this.driver = driver;
